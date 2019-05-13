@@ -1,31 +1,46 @@
 $(document).ready(function(){
-    $("#start-button").on("click",gameState.start)
+        $("h2").click(function(){
+          $(this).hide();
+        }
+        );
 
-});
+    //     event += parseInt($(this).attr('value'));
+
+    // });
+
+    var gameStatus = {
+
+        timeRemaining: 120,
+
+        startTimer: function () {
+            $("#timer").text("Hurry! " + gameStatus.timeRemaining);
+            setInterval(gameStatus.countdown, 1000);
+            $("#homePage").hide();
+            trivia.displayQuestions();
+            console.log(gameStatus.startTimer)
+        },
 
 
-   
-    var gameState = {
+        countdown: function () {
+            gameStatus.timeRemaining--;
+            $("#timer").text("Time remaining: " + gameState.timeRemaining);
+            if (gameStatus.timeRemaining === 0) {
+                gameState.stopTimer();
+                $("#timer").empty();
+                console.log(countdown);
+            }
+        },
+
+        // $(document)on.("click",); 
         
-    timeRemaining: 120,
-
-startbutton: function(){
-    $("#timer").text("Hurry! " + gameTime.timeRemaining);
-    setInterval(gameT.countdown, 1000);
-    
-}
-
-
-   }
-   
-   
-   
-    timer = { 
-
-        time = 120
-
-        start: function 
+        // $(document).ready(function () {
+        // click: function(event)
+        //         $("#start-button").hide();
+        //         startTrivia();
+        //         timer.start();
+        //         $(".done").show();
+        //     },
     }
-
-
-
+    
+    });
+    
