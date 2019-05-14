@@ -13,23 +13,26 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-8 text-center">
-                <img src="assets/images/broadCitylogo.png" class="img-center" id="broadCitylogo">
-                <!-- <div><h1>Trivia</h1></div> -->
-                <div id="firstPage" class="first-page-text">
-                    <h2>Start</h2>
-                    <div id="timer">You got this! 2:00 mins!</div>
-                </div>
-            </div>
         </div>
+        <div class="col-md-12 text-center">
+            <img src="assets/images/broadCitylogo.png" class="img-center img-fluid" id="broadCitylogo">
+            <!-- <div><h1>Trivia</h1></div> -->
+        </div>
+        <div>
+            <h3 id="timer"></h3>
+        </div>
+    </div>
+
+    <div class="col-md-12"></div>
+    <div id="first-Page" class="first-page-text">
+        <div id="button"></div>
+        <h2>Start</h2>
     </div>
 
     <!-- QUESTION PAGE -->
 
     <div>
-        <div class="question-block" id="questions">
+        <div id="questions-box">
         </div>
     </div>
 
@@ -38,9 +41,9 @@
     </div>
     <div class="hide" id="secondPage">
         <h2>Here's what we're workin with</h2>
-        <h3 id="correct">YASSS QWEEN!</h3>
-        <h3 id="incorrect">BITCH WHAT?</h3>
-        <h3 id="unanswered">I mean you tried..</h3>
+        <p id="correct">YASSS QWEEN!</p>
+        <p id="incorrect">BITCH WHAT?</p>
+        <p id="unanswered">I mean you tried..</p>
     </div>
 
     <div id="reset">lets re-do that</div>
@@ -52,8 +55,7 @@
         <div class="col-md-2"></div> -->
 
 
-    </div>
-    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>

@@ -3,7 +3,18 @@ body {
 }
 
 #broadCitylogo {
-}
+    width: 600px;
+    height: 300px;
+  }
 
-h2 {
+/* #button {
+    background-color: whitesmoke; */
+    /* background-position: center;
+    width: 300px;
+    float: right 40px;
+    align-self: center; */
+
+}   
+h2{
+    align-text: center;
 }
