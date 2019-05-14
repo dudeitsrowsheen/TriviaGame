@@ -1,16 +1,9 @@
-/* // $("#start-button").on("click",); */
-,
-    // $("#timer").text("Time remaining: " + gameStatus.timeRemaining);
+body {
+    background-color: pink;
+}
 
-    // }
+#broadCitylogo {
+}
 
-   // startbutton: function () {
-    //     $("#timer").text("Hurry! " + gameStatus.timeRemaining);
-    //     setInterval(gameStatus.countdown, 1000);
-
-    // }
-    //     $("#timer").text("Time remaining: " + gameStatus.timeRemaining);
-        //     setInterval(gameStatus.countdown, 1000);
-        //     $("#start-page").hide();
-        //     trivia.displayQuestions();
-        // },
+h2 {
+}
