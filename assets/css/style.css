@@ -3,18 +3,28 @@ body {
 }
 
 #broadCitylogo {
-    width: 600px;
-    height: 300px;
+    width: 750px;
   }
+
+.h1 {
+text: center;
+
+  }
+
+#start-button {
+  background-color: blueviolet;
+  width: 200px;
+  text-align: center;
+  background-position: center;
+}
+
 
 /* #button {
     background-color: whitesmoke; */
     /* background-position: center;
     width: 300px;
     float: right 40px;
-    align-self: center; */
+    align-self: center; */   
+/* h2 {
 
-}   
-h2{
-    align-text: center;
-}
+} */
