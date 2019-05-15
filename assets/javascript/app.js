@@ -23,13 +23,13 @@ $(document).ready(function () {
                 console.log(q1.correct)
                 var questionBox = $('<div>').text(q1.q)
                 for (var i = 0; i < q1.a.length; i++) {
-                    var button = $('<button>').text(q1.a[i]);
-                    button.attr('data-val', i);
-                    button.click(function () {
+                    var Button = $('<Button>').text(q1.a[i]);
+                    Button.attr('data-val', i);
+                    Button.click(function () {
                         q1.user = $(this).attr('data-val');
                         console.log(q1.user);
                     });
-                    questionBox.append(button);
+                    questionBox.append(Button);
                 }
                 $("#questions").append(questionBox)
             })
@@ -37,12 +37,16 @@ $(document).ready(function () {
         },
 
         checkAnswers: function () {
+            $.each(this.score, function () {
+                
+            })
             //some sort of loop to grade all questions on page
         },
 
         displayAnswerPage: function () {
+            checkAnswers.displayAnswerPage();
             var score = 0;
-            $.each(questions, function () {
+            $.each(this.score, function () {
                 if ($(this).user == -1) {
                     score -= 0;
                 } else if ($(this).user == $(this).correct) {
@@ -51,10 +55,11 @@ $(document).ready(function () {
                     scoree += 0.5;
                 }
             })
-            // $("#answerPage").display();
+
+            $("#AnswerPage").display(); 
             $("#questions").empty();
             $("#timer").empty();
-            if (score < 3) {//change based on how many q's you have (total possible score values)
+            if (score < 10) {//change based on how many q's you have (total possible score values)
                 $("#unanswered").text("You don't watch Broad City biotch");
             } else if (score < 5) {
                 $("#no").text("EXCUSE-AH-ME?");
@@ -62,6 +67,7 @@ $(document).ready(function () {
                 $("#yes").text("YASSS QWEEN!");
             }
         },
+
 
 
 
@@ -127,7 +133,7 @@ $(document).ready(function () {
 
     var gameStatus = {
         interval: null,
-        timeRemaining: 120,
+        timeRemaining: 5,
 
         startTimer: function () {
             $("#timer").text("Time remaining: " + gameStatus.timeRemaining);
@@ -144,8 +150,8 @@ $(document).ready(function () {
             if (gameStatus.timeRemaining <= 0) {
                 gameStatus.stopTimer();
                 // countdown = Math.max(1, countdown);
-                trivia.displayAnswerPage();
-                $(timer).empty();
+                $("#AnswerPage").text();
+                $("#timer").empty();
             }
         },
 

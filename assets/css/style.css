@@ -19,6 +19,17 @@ border: none;
 /* background: transparent; */
 }
 
+#question-btn {
+  background-color: greenyellow;
+}
+
+h2 {
+  text-align: center;
+}
+
+#answerPage {
+  text-align: center;
+}
 
 /* #button {
     background-color: whitesmoke; */
