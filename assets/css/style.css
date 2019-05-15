@@ -6,16 +6,17 @@ body {
     width: 750px;
   }
 
-.h1 {
+h1 {
 text: center;
+font-family: 'Courier New', Courier, monospace;
 
   }
 
-#start-button {
-  background-color: blueviolet;
-  width: 200px;
-  text-align: center;
-  background-position: center;
+#Button {
+background-color: aquamarine;
+content: center;
+border: none;
+/* background: transparent; */
 }
 
 
