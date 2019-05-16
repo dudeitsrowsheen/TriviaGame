@@ -133,7 +133,7 @@ $(document).ready(function () {
 
     var gameStatus = {
         interval: null,
-        timeRemaining: 5,
+        timeRemaining: 60,
 
         startTimer: function () {
             $("#timer").text("Time remaining: " + gameStatus.timeRemaining);
